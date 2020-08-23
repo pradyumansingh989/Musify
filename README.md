@@ -34,6 +34,6 @@
    ![](images/signupPage.PNG)  
    ![](images/loginpage.PNG)  
    ![](images/category-list.png)  
-   ![](images/singlecategory.PNG)  
-   ![](images/profile.PNG)
+   ![](images/bts.png)  
+   ![](images/your-upload.png)
   
