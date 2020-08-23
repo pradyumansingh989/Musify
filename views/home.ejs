@@ -1,0 +1,1104 @@
+
+<!-- sidebar -->
+<body style="overflow-y: hidden;">
+<div class="external m-0 p-0 h-100" style="background-color: black;">
+<div id="sidebar">
+    <div>
+        <img src="/images/logo.png">
+        <p style="color: white;display: inline;font-size: 1.5rem;margin-left: 0.5vw;">Musify</p>
+      </div>
+    <!-- <div class="toggle-btn"><a>
+     <span></span>
+     <span></span>
+     <span></span>
+    </a> -->
+    </div>
+    <ul class="sidebar_ul">
+      <li><a href="/music/categories_list"><i class="fas fa-home"></i>Home</a></li>
+      <li><a href="#"><i class="fas fa-music"></i>Library</a></li>
+      <li><a href="#">Playlists</a></li>
+      <li><a href="/music/uploadPage"><i class="fas fa-list-ul"></i>Upload Songs</a></li>
+      <li><a href="/users/profile/<%=locals.user._id%>"><i class="fas fa-heart"></i>My Songs</a></li>
+    </ul>
+  
+   </div>
+
+<div class="container p-5" id="main_div">
+    
+    <section id="Charts" class="ml-n3">
+        <h4 class="section_head">Charts</h4>
+        <a href="" type="button" class="see_all_button">SEE ALL</a>
+        <div class="row row-cols-1 row-cols-md-5">
+         <a href="/music/adminPlaylist/India Top 50" class="playlist_anchor">
+            <div class="col mb-2">
+                <div class="card card_color">
+                    <div class="view overlay p-3">
+                        <img class="card-img-top card-image playlist_anchor" src="/images/india50.jpg" alt="Arijit Singh">
+                    </div>
+                    
+                    <button id="btn_chart" class="play_button" ></button>
+                    <div id="triangle"></div>
+                    <div class="card-body">
+                        <h4 class="card-title card-head">India Top 50</h4>
+                        <p class="card-text card-para">Your daily update of the most played tracks in India right now.</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+            <!-- Card 2 -->
+            <a href="/music/adminPlaylist/Global Top 50" class="playlist_anchor">
+            <div class="col">
+                <div class="card card_color">
+                    <div class="view overlay p-3">
+                        <img class="card-img-top card-image playlist_anchor" src="/images/global50.jpg" alt="Top 50">
+                    </div>
+                    <button id="btn_chart" class="play_button"></button>
+                    <div id="triangle"></div>
+                    <div class="card-body">
+                        <h4 class="card-title card-head">Global Top 50</h4>
+                        <p class="card-text card-para">Your daily update of the most played track right now</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <!-- Card 3 -->
+            <a href="/music/adminPlaylist/Top Hits - Tamil" class="playlist_anchor">
+            <div class="col">
+                <div class="card card_color">
+                    <div class="view overlay p-3">
+                        <img class="card-img-top card-image playlist_anchor" src="/images/tamil.jpeg" alt="Arijit Singh">
+                    </div>
+                    <button id="btn_chart" class="play_button"></button>
+                    <div id="triangle"></div>
+                    <div class="card-body">
+                        <h4 class="card-title card-head">Top Hits - Tamil</h4>
+                        <p class="card-text card-para">Cath the top hits from Kollywood! Cover : Anirudh Ravichander</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+            <!-- Card4 -->
+            <a href="/music/adminPlaylist/Top Hits - Telugu" class="playlist_anchor">
+            <div class="col">
+                <div class="card card_color">
+                    <div class="view overlay p-3">
+                        <img class="card-img-top card-image playlist_anchor" src="/images/telugu.jpeg" alt="Arijit Singh">
+                    </div>
+                    <button id="btn_chart" class="play_button"></button>
+                    <div id="triangle"></div>
+                    <div class="card-body">
+                        <h4 class="card-title card-head">Top Hits - Telugu</h4>
+                        <p class="card-text card-para">Tune in to the Top Tracks from Tollywood! Cover : Armaan Malik</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <!-- Card 5-->
+          <a href="/music/adminPlaylist/Top Hits Punjabi" class="playlist_anchor">
+            <div class="col">
+                <div class="card card_color">
+                    <div class="view overlay p-3">
+                        <img class="card-img-top card-image playlist_anchor" src="/images/karanaujla.jpg" alt="Arijit Singh">
+                    </div>
+                    <button id="btn_chart" class="play_button"></button>
+                    <div id="triangle"></div>
+                    <div class="card-body">
+                        <h4 class="card-title card-head">Top Hits Punjabi</h4>
+                        <p class="card-text card-para">Catch the hottest punjabi songs.Cover: Karan Aujla</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Section2 -->
+    <section id="Podcast" class="ml-n3">
+        <h4 class="section_head">Podcasts to try</h4>
+        <p id="podcast_para">Podcasts we think you’ll get hooked on.</p>
+        <a href="" type="button" class="see_all_button">SEE ALL</a>
+        <div class="row row-cols-1 row-cols-md-5">
+            <a href="/music/adminPlaylist/TED Talks Daily" class="playlist_anchor">
+            <div class="col mb-2">
+                <div class="card card_color">
+                    <div class="view overlay p-3">
+                        <img class="card-img-top card-image playlist_anchor" src="/images/tedtalks.jpg" alt="Arijit Singh">
+                    </div>
+                    
+                    <button id="btn_chart" class="play_button"></button>
+                    <div id="triangle"></div>
+                    <div class="card-body">
+                        <h4 class="card-title card-head">TED Talks Daily</h4>
+                        <p class="card-text card-para">TED</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+
+            <!-- Card 2 -->
+            
+            <a href="/music/adminPlaylist/On Purpose with Jay Shetty" class="playlist_anchor">
+            <div class="col">
+                <div class="card card_color">
+                    <div class="view overlay p-3">
+                        <img class="card-img-top card-image playlist_anchor" src="/images/jay.jpeg" alt="Arijit Singh">
+                    </div>
+                    <button id="btn_chart" class="play_button"></button>
+                    <div id="triangle"></div>
+                    <div class="card-body">
+                        <h4 class="card-title card-head">On Purpose with Jay Shetty</h4>
+                        <p class="card-text card-para">Jay Shetty and Kast Media</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <!-- Card 3 -->
+            <a href="/music/adminPlaylist/7 Good Minutes Daily Self-Improvement Podcast with Clyde Lee Dennis" class="playlist_anchor">
+            <div class="col">
+                <div class="card card_color">
+                    <div class="view overlay p-3">
+                        <img class="card-img-top card-image playlist_anchor" src="/images/goodminutes.jpg" alt="Arijit Singh">
+                    </div>
+                    <button id="btn_chart" class="play_button"></button>
+                    <div id="triangle"></div>
+                    <div class="card-body">
+                        <h4 class="card-title card-head">7 Good Minutes Daily Self-Improvement Podcast with Clyde Lee Dennis</h4>
+                        <p class="card-text card-para">Clyde Lee Dennis</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <!-- Card4 -->
+            <a href="/music/adminPlaylist/Sadhguru" class="playlist_anchor">
+            <div class="col">
+                <div class="card card_color">
+                    <div class="view overlay p-3">
+                        <img class="card-img-top card-image playlist_anchor" src="/images/sadhguru.jpeg" alt="Arijit Singh">
+                    </div>
+                    <button id="btn_chart" class="play_button"></button>
+                    <div id="triangle"></div>
+                    <div class="card-body">
+                        <h4 class="card-title card-head">Sadhguru</h4>
+                        <p class="card-text card-para">Adiyogi</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <!-- Card 5-->
+            <a href="/music/adminPlaylist/The ALUX.COM Podcast" class="playlist_anchor">
+            <div class="col">
+                <div class="card card_color">
+                    <div class="view overlay p-3">
+                        <img class="card-img-top card-image playlist_anchor" src="/images/alux.jpeg" alt="Arijit Singh">
+                    </div>
+                    <button id="btn_chart" class="play_button"></button>
+                    <div id="triangle"></div>
+                    <div class="card-body">
+                        <h4 class="card-title card-head">The ALUX.COM Podcast</h4>
+                        <p class="card-text card-para">Alux.com</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Section3 -->
+
+    <section id="Popular_Playlist" class="ml-n3">
+        <h4 class="section_head">Popular Playlist</h4>
+        <a href="" type="button" class="see_all_button">SEE ALL</a>
+        <div class="row row-cols-1 row-cols-md-5">
+            <a href="/music/adminPlaylist/Workout" class="playlist_anchor">
+            <div class="col mb-2">
+                <div class="card card_color">
+                    <div class="view overlay p-3">
+                        <img class="card-img-top card-image playlist_anchor" src="/images/workout.jpg" alt="Arijit Singh">
+                    </div>
+                    
+                    <button id="btn_chart" class="play_button"></button>
+                    <div id="triangle"></div>
+                    <div class="card-body">
+                        <h4 class="card-title card-head">Workout</h4>
+                        <p class="card-text card-para">Pop hits to keep your workout fresh.</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <!-- Card 2 -->
+            <a href="/music/adminPlaylist/All Out 10s" class="playlist_anchor">
+            <div class="col">
+                <div class="card card_color">
+                    <div class="view overlay p-3">
+                        <img class="card-img-top card-image playlist_anchor" src="/images/allout10.jpeg" alt="Arijit Singh">
+                    </div>
+                    <button id="btn_chart" class="play_button"></button>
+                    <div id="triangle"></div>
+                    <div class="card-body">
+                        <h4 class="card-title card-head">All Out 10s</h4>
+                        <p class="card-text card-para">EDM became mainstream and hip-hop started to rule the world - this is the 2010s.</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <!-- Card 3 -->
+            <a href="/music/adminPlaylist/Today's Top 10 Hits" class="playlist_anchor">
+            <div class="col">
+                <div class="card card_color">
+                    <div class="view overlay p-3">
+                        <img class="card-img-top card-image playlist_anchor" src="/images/top10hits.jpeg" alt="Arijit Singh">
+                    </div>
+                    <button id="btn_chart" class="play_button"></button>
+                    <div id="triangle"></div>
+                    <div class="card-body">
+                        <h4 class="card-title card-head">Today's Top 10 Hits</h4>
+                        <p class="card-text card-para">Megan Thee Stallion & Beyoncé are on top of the Hottest 50!</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <!-- Card4 -->
+            <a href="/music/adminPlaylist/This is Alan Walker" class="playlist_anchor">
+            <div class="col">
+                <div class="card card_color">
+                    <div class="view overlay p-3">
+                        <img class="card-img-top card-image playlist_anchor" src="/images/alanwalker.jpeg" alt="Arijit Singh">
+                    </div>
+                    <button id="btn_chart" class="play_button"></button>
+                    <div id="triangle"></div>
+                    <div class="card-body">
+                        <h4 class="card-title card-head">This is Alan Walker</h4>
+                        <p class="card-text card-para">The essential Alan Walker tracks and remixes.</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <!-- Card 5-->
+            <a href="/music/adminPlaylist/This is Arijit Singh" class="playlist_anchor">
+            <div class="col">
+                <div class="card card_color">
+                    <div class="view overlay p-3">
+                        <img class="card-img-top card-image playlist_anchor" src="/images/thisas.jpg" alt="Arijit Singh">
+                    </div>
+                    <button id="btn_chart" class="play_button"></button>
+                    <div id="triangle"></div>
+                    <div class="card-body">
+                        <h4 class="card-title card-head">This is Arijit Singh</h4>
+                        <p class="card-text card-para">The Bollywood crooner's best songs.</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Section 4 -->
+
+    <section id="Mood" class="ml-n3">
+        <h4 class="section_head">Mood</h4>
+        <p class="mood_para">Playlists to match your mood.</p>
+        <a href="" type="button" class="see_all_button">SEE ALL</a>
+        <div class="row row-cols-1 row-cols-md-5">
+            <a href="/music/adminPlaylist/Mood Booster" class="playlist_anchor">
+            <div class="col mb-2">
+                <div class="card card_color">
+                    <div class="view overlay p-3">
+                        <img class="card-img-top card-image playlist_anchor" src="/images/moodbooster.jpeg" alt="Arijit Singh">
+                    </div>
+                    
+                    <button id="btn_chart" class="play_button"></button>
+                    <div id="triangle"></div>
+                    <div class="card-body">
+                        <h4 class="card-title card-head">Mood Booster</h4>
+                        <p class="card-text card-para">Get happy with this pick-me-up playlist full of current feel-good songs!</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+
+            <!-- Card 2 -->
+            <a href="/music/adminPlaylist/Alone Again" class="playlist_anchor">
+            <div class="col">
+                <div class="card card_color">
+                    <div class="view overlay p-3">
+                        <img class="card-img-top card-image playlist_anchor" src="/images/aloneagain.jpeg" alt="Arijit Singh">
+                    </div>
+                    <button id="btn_chart" class="play_button"></button>
+                    <div id="triangle"></div>
+                    <div class="card-body">
+                        <h4 class="card-title card-head">Alone Again</h4>
+                        <p class="card-text card-para">When everything is lonely, I can be my best friend.</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <!-- Card 3 -->
+            <a href="/music/adminPlaylist/Life Sucks" class="playlist_anchor">
+            <div class="col">
+                <div class="card card_color">
+                    <div class="view overlay p-3">
+                        <img class="card-img-top card-image playlist_anchor" src="/images/lifesucks.jpeg" alt="Arijit Singh">
+                    </div>
+                    <button id="btn_chart" class="play_button"></button>
+                    <div id="triangle"></div>
+                    <div class="card-body">
+                        <h4 class="card-title card-head">Life Sucks</h4>
+                        <p class="card-text card-para">Feeling like everything just plain sucks? We've all been there.</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <!-- Card4 -->
+            <a href="/music/adminPlaylist/Feelin' Good" class="playlist_anchor">
+            <div class="col">
+                <div class="card card_color">
+                    <div class="view overlay p-3">
+                        <img class="card-img-top card-image playlist_anchor" src="/images/feelinggood.jpeg" alt="Arijit Singh">
+                    </div>
+                    <button id="btn_chart" class="play_button"></button>
+                    <div id="triangle"></div>
+                    <div class="card-body">
+                        <h4 class="card-title card-head">Feelin' Good</h4>
+                        <p class="card-text card-para">Feel good with this positively timeless playlist!</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <!-- Card 5-->
+            <a href="/music/adminPlaylist/Sad Beats" class="playlist_anchor">
+            <div class="col">
+                <div class="card card_color">
+                    <div class="view overlay p-3">
+                        <img class="card-img-top card-image playlist_anchor" src="/images/sadbeats.jpeg" alt="Arijit Singh">
+                    </div>
+                    <button id="btn_chart" class="play_button"></button>
+                    <div id="triangle"></div>
+                    <div class="card-body">
+                        <h4 class="card-title card-head">Sad Beats</h4>
+                        <p class="card-text card-para">electronic melancholy &lt3 </p>
+                    </div>
+                </div>
+            </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Section 5 -->
+
+    <section id="Sleep" class="ml-n3">
+        <h4 class="section_head">Sleep</h4>
+        <a href="" type="button" class="see_all_button">SEE ALL</a>
+        <div class="row row-cols-1 row-cols-md-5">
+            <a href="/music/adminPlaylist/Dreamy Vibes" class="playlist_anchor">
+            <div class="col mb-2">
+                <div class="card card_color">
+                    <div class="view overlay p-3">
+                        <img class="card-img-top card-image playlist_anchor" src="/images/dreamyvibes.jpeg" alt="Arijit Singh">
+                    </div>
+                    
+                    <button id="btn_chart" class="play_button"></button>
+                    <div id="triangle"></div>
+                    <div class="card-body">
+                        <h4 class="card-title card-head">Dreamy Vibes</h4>
+                        <p class="card-text card-para">Hypnotic bliss</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <!-- Card 2 -->
+            <a href="/music/adminPlaylist/Sleep" class="playlist_anchor">
+            <div class="col">
+                <div class="card card_color">
+                    <div class="view overlay p-3">
+                        <img class="card-img-top card-image playlist_anchor" src="/images/sleep.jpeg" alt="Arijit Singh">
+                    </div>
+                    <button id="btn_chart" class="play_button"></button>
+                    <div id="triangle"></div>
+                    <div class="card-body">
+                        <h4 class="card-title card-head">Sleep</h4>
+                        <p class="card-text card-para">Gentle ambient piano to help you fall asleep.</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <!-- Card 3 -->
+            <a href="/music/adminPlaylist/Sleepy Piano" class="playlist_anchor">
+            <div class="col">
+                <div class="card card_color">
+                    <div class="view overlay p-3">
+                        <img class="card-img-top card-image playlist_anchor" src="/images/sleepypiano.jpeg" alt="Arijit Singh">
+                    </div>
+                    <button id="btn_chart" class="play_button"></button>
+                    <div id="triangle"></div>
+                    <div class="card-body">
+                        <h4 class="card-title card-head">Sleepy Piano</h4>
+                        <p class="card-text card-para">Calm piano music for sleeping.</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+
+            <!-- Card4 -->
+            <a href="/music/adminPlaylist/Shubh Night" class="playlist_anchor">
+            <div class="col">
+                <div class="card card_color">
+                    <div class="view overlay p-3">
+                        <img class="card-img-top card-image playlist_anchor" src="/images/shubhnight.jpeg" alt="Arijit Singh">
+                    </div>
+                    <button id="btn_chart" class="play_button"></button>
+                    <div id="triangle"></div>
+                    <div class="card-body">
+                        <h4 class="card-title card-head">Shubh Night</h4>
+                        <p class="card-text card-para">The perfect sounds to help you get a good night's sleep</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+        </div>
+    </section>
+
+        <!-- Section 6 -->
+
+        <section id="Popular_albums" class="ml-n3">
+            <h4 class="section_head">Popular albums</h4>
+            <a href="" type="button" class="see_all_button">SEE ALL</a>
+            <div class="row row-cols-1 row-cols-md-5">
+                <a href="/music/adminPlaylist/After Hours" class="playlist_anchor">
+                <div class="col mb-2">
+                    <div class="card card_color">
+                        <div class="view overlay p-3">
+                            <img class="card-img-top card-image playlist_anchor" src="/images/afterhours.jpeg" alt="Arijit Singh">
+                        </div>
+                        
+                        <button id="btn_chart" class="play_button"></button>
+                        <div id="triangle"></div>
+                        <div class="card-body">
+                            <h4 class="card-title card-head">After Hours</h4>
+                            <p class="card-text card-para">The Weekend</p>
+                        </div>
+                    </div>
+                </div>
+                </a>
+    
+                <!-- Card 2 -->
+                <a href="/music/adminPlaylist/Changes" class="playlist_anchor">
+                <div class="col">
+                    <div class="card card_color">
+                        <div class="view overlay p-3">
+                            <img class="card-img-top card-image playlist_anchor" src="/images/changes.jpeg" alt="Arijit Singh">
+                        </div>
+                        <button id="btn_chart" class="play_button"></button>
+                        <div id="triangle"></div>
+                        <div class="card-body">
+                            <h4 class="card-title card-head">Changes</h4>
+                            <p class="card-text card-para">Justin Bieber</p>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <!-- Card 3 -->
+                <a href="/music/adminPlaylist/~how i'm feeling~" class="playlist_anchor">
+                <div class="col">
+                    <div class="card card_color">
+                        <div class="view overlay p-3">
+                            <img class="card-img-top card-image playlist_anchor" src="/images/howfeeling.jpeg" alt="Arijit Singh">
+                        </div>
+                        <button id="btn_chart" class="play_button"></button>
+                        <div id="triangle"></div>
+                        <div class="card-body">
+                            <h4 class="card-title card-head">~how i'm feeling~</h4>
+                            <p class="card-text card-para">Lauv</p>
+                        </div>
+                    </div>
+                </div>
+                </a>    
+                <!-- Card4 -->
+                <a href="/music/adminPlaylist/World War Joy" class="playlist_anchor">
+                <div class="col">
+                    <div class="card card_color">
+                        <div class="view overlay p-3">
+                            <img class="card-img-top card-image playlist_anchor" src="/images/warjoy.jpeg" alt="Arijit Singh">
+                        </div>
+                        <button id="btn_chart" class="play_button"></button>
+                        <div id="triangle"></div>
+                        <div class="card-body">
+                            <h4 class="card-title card-head">World War Joy</h4>
+                            <p class="card-text card-para">The Chainsmokers</p>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <!-- Card 5-->
+                <a href="/music/adminPlaylist/Roses (Imanbek Remix)" class="playlist_anchor">
+                <div class="col">
+                    <div class="card card_color">
+                        <div class="view overlay p-3">
+                            <img class="card-img-top card-image playlist_anchor" src="/images/roses.jpeg" alt="Arijit Singh">
+                        </div>
+                        <button id="btn_chart" class="play_button"></button>
+                        <div id="triangle"></div>
+                        <div class="card-body">
+                            <h4 class="card-title card-head">Roses (Imanbek Remix)</h4>
+                            <p class="card-text card-para">SAINt JHN, Imanbek</p>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+        </section>
+
+            <!-- Section 7 -->
+
+    <section id="Trending_now" class="ml-n3">
+        <h4 class="section_head">Trending now</h4>
+        <a href="" type="button" class="see_all_button">SEE ALL</a>
+        <div class="row row-cols-1 row-cols-md-5">
+            <a href="/music/adminPlaylist/Ur So F**KInG COol" class="playlist_anchor">
+            <div class="col mb-2">
+                <div class="card card_color">
+                    <div class="view overlay p-3">
+                        <img class="card-img-top card-image playlist_anchor" src="/images/cool.png" alt="Arijit Singh">
+                    </div>
+                    
+                    <button id="btn_chart" class="play_button"></button>
+                    <div id="triangle"></div>
+                    <div class="card-body">
+                        <h4 class="card-title card-head">Ur So F**KInG COol</h4>
+                        <p class="card-text card-para">Tones And I</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+
+            <!-- Card 2 -->
+            <a href="/music/adminPlaylist/IDK You Yet" class="playlist_anchor">
+            <div class="col">
+                <div class="card card_color">
+                    <div class="view overlay p-3">
+                        <img class="card-img-top card-image playlist_anchor" src="/images/idk.jpeg" alt="Arijit Singh">
+                    </div>
+                    <button id="btn_chart" class="play_button"></button>
+                    <div id="triangle"></div>
+                    <div class="card-body">
+                        <h4 class="card-title card-head">IDK You Yet</h4>
+                        <p class="card-text card-para">Alexander 23.</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <!-- Card 3 -->
+            <a href="/music/adminPlaylist/I met you when I was 18. (the playlist)" class="playlist_anchor">
+            <div class="col">
+                <div class="card card_color">
+                    <div class="view overlay p-3">
+                        <img class="card-img-top card-image playlist_anchor" src="/images/metat18.jpeg" alt="Arijit Singh">
+                    </div>
+                    <button id="btn_chart" class="play_button"></button>
+                    <div id="triangle"></div>
+                    <div class="card-body">
+                        <h4 class="card-title card-head">I met you when I was 18. (the playlist)</h4>
+                        <p class="card-text card-para">Lauv</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <!-- Card4 -->
+            <a href="/music/adminPlaylist/Party Girl" class="playlist_anchor">
+            <div class="col">
+                <div class="card card_color">
+                    <div class="view overlay p-3">
+                        <img class="card-img-top card-image playlist_anchor" src="/images/partygirl.jpeg" alt="Arijit Singh">
+                    </div>
+                    <button id="btn_chart" class="play_button"></button>
+                    <div id="triangle"></div>
+                    <div class="card-body">
+                        <h4 class="card-title card-head">Party Girl</h4>
+                        <p class="card-text card-para">StaySolidRocky</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <!-- Card 5-->
+            <a href="/music/adminPlaylist/BLAME IT ON BABY" class="playlist_anchor">
+            <div class="col">
+                <div class="card card_color">
+                    <div class="view overlay p-3">
+                        <img class="card-img-top card-image playlist_anchor" src="/images/dababy.jpeg" alt="Arijit Singh">
+                    </div>
+                    <button id="btn_chart" class="play_button"></button>
+                    <div id="triangle"></div>
+                    <div class="card-body">
+                        <h4 class="card-title card-head">BLAME IT ON BABY</h4>
+                        <p class="card-text card-para">DaBaby</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+        </div>
+    </section>
+
+        <!-- Section 8 -->
+
+        <section id="Focus" class="ml-n3">
+            <h4 class="section_head">Focus</h4>
+            <p class="focus_para">Music to help you concentrate.</p>
+            <a href="" type="button" class="see_all_button">SEE ALL</a>
+            <div class="row row-cols-1 row-cols-md-5">
+                <a href="/music/adminPlaylist/Brain Food" class="playlist_anchor">
+                <div class="col mb-2">
+                    <div class="card card_color">
+                        <div class="view overlay p-3">
+                            <img class="card-img-top card-image playlist_anchor" src="/images/brainfood.jpeg" alt="Arijit Singh">
+                        </div>
+                        
+                        <button id="btn_chart" class="play_button"></button>
+                        <div id="triangle"></div>
+                        <div class="card-body">
+                            <h4 class="card-title card-head">Brain Food</h4>
+                            <p class="card-text card-para">hypnotic electronic for studies and relax.</p>
+                        </div>
+                    </div>
+                </div>
+                </a>
+    
+                <!-- Card 2 -->
+                <a href="/music/adminPlaylist/Lo-Fi Beats" class="playlist_anchor">
+                <div class="col">
+                    <div class="card card_color">
+                        <div class="view overlay p-3">
+                            <img class="card-img-top card-image playlist_anchor" src="/images/lofi.jpeg" alt="Arijit Singh">
+                        </div>
+                        <button id="btn_chart" class="play_button"></button>
+                        <div id="triangle"></div>
+                        <div class="card-body">
+                            <h4 class="card-title card-head">Lo-Fi Beats</h4>
+                            <p class="card-text card-para">Beats to relax and focus.</p>
+                        </div>
+                    </div>
+                </div>
+                </a>
+    
+                <!-- Card 3 -->
+                <a href="/music/adminPlaylist/Nature Sounds" class="playlist_anchor">
+                <div class="col">
+                    <div class="card card_color">
+                        <div class="view overlay p-3">
+                            <img class="card-img-top card-image playlist_anchor" src="/images/naturesound.jpeg" alt="Arijit Singh">
+                        </div>
+                        <button id="btn_chart" class="play_button"></button>
+                        <div id="triangle"></div>
+                        <div class="card-body">
+                            <h4 class="card-title card-head">Nature Sounds</h4>
+                            <p class="card-text card-para">Sounds of birds, rain and jungle ambience.</p>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <!-- Card4 -->
+                <a href="/music/adminPlaylist/Deep Focus" class="playlist_anchor">
+                <div class="col">
+                    <div class="card card_color">
+                        <div class="view overlay p-3">
+                            <img class="card-img-top card-image playlist_anchor" src="/images/df.jpeg" alt="Arijit Singh">
+                        </div>
+                        <button id="btn_chart" class="play_button"></button>
+                        <div id="triangle"></div>
+                        <div class="card-body">
+                            <h4 class="card-title card-head">Deep Focus</h4>
+                            <p class="card-text card-para">Keep calm and focus with ambient and post-rock music.</p>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <!-- Card 5-->
+                <a href="/music/adminPlaylist/Peaceful Piano" class="playlist_anchor">
+                <div class="col">
+                    <div class="card card_color">
+                        <div class="view overlay p-3">
+                            <img class="card-img-top card-image playlist_anchor" src="/images/peaceful.jpeg" alt="Arijit Singh">
+                        </div>
+                        <button id="btn_chart" class="play_button"></button>
+                        <div id="triangle"></div>
+                        <div class="card-body">
+                            <h4 class="card-title card-head">Peaceful Piano</h4>
+                            <p class="card-text card-para">Relax and indulge with beautiful piano pieces.</p>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Section 9 -->
+
+        <section id="Sound_of_india" class="ml-n3">
+            <h4 class="section_head">Sound of India</h4>
+            <a href="" type="button" class="see_all_button">SEE ALL</a>
+            <div class="row row-cols-1 row-cols-md-5">
+                <a href="/music/adminPlaylist/The Sound of Mumbai IN" class="playlist_anchor">
+                <div class="col mb-2">
+                    <div class="card card_color">
+                        <div class="view overlay p-3">
+                            <img class="card-img-top card-image playlist_anchor" src="/images/mumbai.jpeg" alt="Arijit Singh">
+                        </div>
+                        
+                        <button id="btn_chart" class="play_button"></button>
+                        <div id="triangle"></div>
+                        <div class="card-body">
+                            <h4 class="card-title card-head">The Sound of Mumbai IN</h4>
+                            <p class="card-text card-para">The songs that define, unite and distinguish Mumbai IN, according to listening patterns and math. See also The Sound of India, or the Sounds of Marathi Pop, Modern Bollywood, Hindi Hip Hop, Sufi, Desi Pop, Classic Bollywood, Indian Singer-Songwriter, Filmi, Indian Indie or Ghazal..</p>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <!-- Card 2 -->
+                <a href="/music/adminPlaylist/The Sound of Kolkata IN" class="playlist_anchor">
+                <div class="col">
+                    <div class="card card_color">
+                        <div class="view overlay p-3">
+                            <img class="card-img-top card-image playlist_anchor" src="/images/kolkata.jpeg" alt="Arijit Singh">
+                        </div>
+                        <button id="btn_chart" class="play_button"></button>
+                        <div id="triangle"></div>
+                        <div class="card-body">
+                            <h4 class="card-title card-head">The Sound of Kolkata IN</h4>
+                            <p class="card-text card-para">The songs that define, unite and distinguish Kolkata IN, according to listening patterns and math. See also The Sound of India, or the Sounds of Rabindra Sangeet, Kolkata Indie, Hindustani Instrumental, Tabla, Sitar, Hindustani Classical or Bangla..</p>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <!-- Card 3 -->
+                <a href="/music/adminPlaylist/The Sound of Delhi IN" class="playlist_anchor">
+                <div class="col">
+                    <div class="card card_color">
+                        <div class="view overlay p-3">
+                            <img class="card-img-top card-image playlist_anchor" src="/images/delhi.jpeg" alt="Arijit Singh">
+                        </div>
+                        <button id="btn_chart" class="play_button"></button>
+                        <div id="triangle"></div>
+                        <div class="card-body">
+                            <h4 class="card-title card-head">The Sound of Delhi IN</h4>
+                            <p class="card-text card-para">The songs that define, unite and distinguish Delhi IN, according to listening patterns and math. See also The Sound of India, or the Sounds of Indian Rock or Indian Indie..</p>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <!-- Card4 --> 
+                <a href="/music/adminPlaylist/The Sound of Bengaluru IN" class="playlist_anchor">
+                <div class="col">
+                    <div class="card card_color">
+                        <div class="view overlay p-3">
+                            <img class="card-img-top card-image playlist_anchor" src="/images/bengaluru.jpeg" alt="Arijit Singh">
+                        </div>
+                        <button id="btn_chart" class="play_button"></button>
+                        <div id="triangle"></div>
+                        <div class="card-body">
+                            <h4 class="card-title card-head">The Sound of Bengaluru IN</h4>
+                            <p class="card-text card-para">The songs that define, unite and distinguish Bengaluru IN, according to listening patterns and math. See also The Sound of India.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                </a>
+    
+                <!-- Card 5-->
+                <a href="/music/adminPlaylist/The Sound of Chennai IN" class="playlist_anchor">
+                <div class="col">
+                    <div class="card card_color">
+                        <div class="view overlay p-3">
+                            <img class="card-img-top card-image playlist_anchor" src="/images/chennai.jpeg" alt="Arijit Singh">
+                        </div>
+                        <button id="btn_chart" class="play_button"></button>
+                        <div id="triangle"></div>
+                        <div class="card-body">
+                            <h4 class="card-title card-head">The Sound of Chennai IN</h4>
+                            <p class="card-text card-para">The songs that define, unite and distinguish Chennai IN, according to listening patterns and math. See also The Sound of India, or the Sounds of Tamil Pop, Carnatic Instrumental, Carnatic, Carnatic Vocal, Indian Violin, Deep Indian Pop, Indian Classical or Filmi..</p>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Section 10 -->
+
+        <section id="new_releases" class="ml-n3">
+            <h4 class="section_head">Popular new releases</h4>
+            <a href="" type="button" class="see_all_button">SEE ALL</a>
+            <div class="row row-cols-1 row-cols-md-5">
+                <a href="/music/adminPlaylist/New Music Friday" class="playlist_anchor">
+                <div class="col mb-2">
+                    <div class="card card_color">
+                        <div class="view overlay p-3">
+                            <img class="card-img-top card-image playlist_anchor" src="/images/newmusicfriday.png" alt="Arijit Singh">
+                        </div>
+                        
+                        <button id="btn_chart" class="play_button"></button>
+                        <div id="triangle"></div>
+                        <div class="card-body">
+                            <h4 class="card-title card-head">New Music Friday</h4>
+                            <p class="card-text card-para">The very best in new music from around the world. Cover: Run The Jewels</p>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <!-- Card 2 -->
+                <a href="/music/adminPlaylist/Together" class="playlist_anchor">
+                <div class="col">
+                    <div class="card card_color">
+                        <div class="view overlay p-3">
+                            <img class="card-img-top card-image playlist_anchor" src="/images/siatogether.jpeg" alt="Arijit Singh">
+                        </div>
+                        <button id="btn_chart" class="play_button"></button>
+                        <div id="triangle"></div>
+                        <div class="card-body">
+                            <h4 class="card-title card-head">Together</h4>
+                            <p class="card-text card-para">Sia</p>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <!-- Card 3 -->
+                <a href="/music/adminPlaylist/TKN (feat. Travis Scott)" class="playlist_anchor">
+                <div class="col">
+                    <div class="card card_color">
+                        <div class="view overlay p-3">
+                            <img class="card-img-top card-image playlist_anchor" src="/images/tkn.jpeg" alt="Arijit Singh">
+                        </div>
+                        <button id="btn_chart" class="play_button"></button>
+                        <div id="triangle"></div>
+                        <div class="card-body">
+                            <h4 class="card-title card-head">TKN (feat. Travis Scott)</h4>
+                            <p class="card-text card-para">ROSALÍA, Travis Scott</p>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <!-- Card4 -->
+                <a href="/music/adminPlaylist/Golden Hour" class="playlist_anchor">
+                <div class="col">
+                    <div class="card card_color">
+                        <div class="view overlay p-3">
+                            <img class="card-img-top card-image playlist_anchor" src="/images/goldenhour.jpeg" alt="Arijit Singh">
+                        </div>
+                        <button id="btn_chart" class="play_button"></button>
+                        <div id="triangle"></div>
+                        <div class="card-body">
+                            <h4 class="card-title card-head">Golden Hour</h4>
+                            <p class="card-text card-para">Kygo</p>
+                        </div>
+                    </div>
+                </div>
+                </a>
+    
+                <!-- Card 5-->
+                <a href="/music/adminPlaylist/Dark" class="playlist_anchor">
+                <div class="col">
+                    <div class="card card_color">
+                        <div class="view overlay p-3">
+                            <img class="card-img-top card-image playlist_anchor" src="/images/dark.png" alt="Arijit Singh">
+                        </div>
+                        <button id="btn_chart" class="play_button"></button>
+                        <div id="triangle"></div>
+                        <div class="card-body">
+                            <h4 class="card-title card-head">Dark</h4>
+                            <p class="card-text card-para">Dhruv Visvanath</p>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Section 11 -->
+
+        <section id="Editor_picks" class="ml-n3">
+            <h4 class="section_head">Editor's picks</h4>
+            <a href="" type="button" class="see_all_button">SEE ALL</a>
+            <div class="row row-cols-1 row-cols-md-5">
+                <a href="/music/adminPlaylist/IPOP" class="playlist_anchor">
+                <div class="col mb-2">
+                    <div class="card card_color">
+                        <div class="view overlay p-3">
+                            <img class="card-img-top card-image playlist_anchor" src="/images/ipop.jpeg" alt="Arijit Singh">
+                        </div>
+                        
+                        <button id="btn_chart" class="play_button"></button>
+                        <div id="triangle"></div>
+                        <div class="card-body">
+                            <h4 class="card-title card-head">IPOP</h4>
+                            <p class="card-text card-para">Score all the biggest hits from your favorite pop stars. Cover- B Praak</p>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <!-- Card 2 -->
+                <a href="/music/adminPlaylist/Top Hits Marathi" class="playlist_anchor">
+                <div class="col">
+                    <div class="card card_color">
+                        <div class="view overlay p-3">
+                            <img class="card-img-top card-image playlist_anchor" src="/images/marathi.jpeg" alt="Arijit Singh">
+                        </div>
+                        <button id="btn_chart" class="play_button"></button>
+                        <div id="triangle"></div>
+                        <div class="card-body">
+                            <h4 class="card-title card-head">Top Hits Marathi</h4>
+                            <p class="card-text card-para">Tune into the hottest Marathi songs. Cover- Ajay-Atul</p>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Section 12 -->
+
+        <section id="soundtrack_home" class="ml-n3">
+            <h4 class="section_head">Soundtrack your home</h4>
+            <p class="focus_para">Music to help you concentrate.</p>
+            <a href="" type="button" class="see_all_button">SEE ALL</a>
+            <div class="row row-cols-1 row-cols-md-5">
+                <a href="/music/adminPlaylist/Dil Se Thankyou" class="playlist_anchor">
+                <div class="col mb-2">
+                    <div class="card card_color">
+                        <div class="view overlay p-3">
+                            <img class="card-img-top card-image playlist_anchor" src="/images/dilsety.jpeg" alt="Arijit Singh">
+                        </div>
+                        
+                        <button id="btn_chart" class="play_button"></button>
+                        <div id="triangle"></div>
+                        <div class="card-body">
+                            <h4 class="card-title card-head">Dil Se Thank You</h4>
+                            <p class="card-text card-para">A musical tribute to all the care givers.</p>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <!-- Card 2 -->
+                <a href="/music/adminPlaylist/Kollywood Cream" class="playlist_anchor">
+                <div class="col">
+                    <div class="card card_color">
+                        <div class="view overlay p-3">
+                            <img class="card-img-top card-image playlist_anchor" src="/images/kollywoodcream.jpeg" alt="Arijit Singh">
+                        </div>
+                        <button id="btn_chart" class="play_button"></button>
+                        <div id="triangle"></div>
+                        <div class="card-body">
+                            <h4 class="card-title card-head">Kollywood Cream</h4>
+                            <p class="card-text card-para">A Rich Collection of Tamil Hits. Cover : Master</p>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <!-- Card 3 -->
+                <a href="/music/adminPlaylist/Tollywood Pearls" class="playlist_anchor">
+                <div class="col">
+                    <div class="card card_color">
+                        <div class="view overlay p-3">
+                            <img class="card-img-top card-image playlist_anchor" src="/images/tollywood.jpeg" alt="Arijit Singh">
+                        </div>
+                        <button id="btn_chart" class="play_button"></button>
+                        <div id="triangle"></div>
+                        <div class="card-body">
+                            <h4 class="card-title card-head">Tollywood Pearls</h4>
+                            <p class="card-text card-para">The finest set of music from Telugu films. Cover : Ala Vaikunthapurramuloo</p>
+                        </div>
+                    </div>
+                </div>
+                </a>
+          </div>
+        </section>
+
+        <!-- Section 13 -->
+
+        <section id="artists" class="ml-n3">
+            <h4 class="section_head">Popular artists</h4>
+            <a href="" type="button" class="see_all_button">SEE ALL</a>
+            <div class="row row-cols-1 row-cols-md-5">
+                <a href="/music/adminPlaylist/Neha Kakkar" class="playlist_anchor">
+                <div class="col mb-2">
+                    <div class="card card_color">
+                        <div class="view overlay p-3">
+                            <img class="card-img-top card-image2 playlist_anchor" src="/images/neha.jpg" alt="Arijit Singh">
+                        </div>
+                        
+                        <button id="btn_chart" class="play_button"></button>
+                        <div id="triangle"></div>
+                        <div class="card-body">
+                            <h4 class="card-title card-head">Neha Kakkar</h4>
+                            <p class="card-text card-para">Artist</p>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <!-- Card 2 -->
+                <a href="/music/adminPlaylist/Badshah" class="playlist_anchor">
+                <div class="col">
+                    <div class="card card_color">
+                        <div class="view overlay p-3">
+                            <img class="card-img-top card-image2 playlist_anchor" src="/images/Badshah.jpg" alt="Arijit Singh">
+                        </div>
+                        <button id="btn_chart" class="play_button"></button>
+                        <div id="triangle"></div>
+                        <div class="card-body">
+                            <h4 class="card-title card-head">Badshah</h4>
+                            <p class="card-text card-para">Artist</p>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <!-- Card 3 -->
+                <a href="/music/adminPlaylist/Eminem" class="playlist_anchor">
+                <div class="col">
+                    <div class="card card_color">
+                        <div class="view overlay p-3">
+                            <img class="card-img-top card-image2 playlist_anchor" src="/images/eminem.jpg" alt="Arijit Singh">
+                        </div>
+                        <button id="btn_chart" class="play_button"></button>
+                        <div id="triangle"></div>
+                        <div class="card-body">
+                            <h4 class="card-title card-head">Eminem</h4>
+                            <p class="card-text card-para">Artist</p>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <!-- Card4 -->
+                <a href="/music/adminPlaylist/BTS" class="playlist_anchor">
+                <div class="col">
+                    <div class="card card_color">
+                        <div class="view overlay p-3">
+                            <img class="card-img-top card-image2 playlist_anchor" src="/images/bts.jpeg" alt="Arijit Singh">
+                        </div>
+                        <button id="btn_chart" class="play_button"></button>
+                        <div id="triangle"></div>
+                        <div class="card-body">
+                            <h4 class="card-title card-head">BTS</h4>
+                            <p class="card-text card-para">Artist</p>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <!-- Card 5-->
+                <a href="/music/adminPlaylist/One Direction" class="playlist_anchor">
+                <div class="col">
+                    <div class="card card_color">
+                        <div class="view overlay p-3">
+                            <img class="card-img-top card-image2 playlist_anchor" src="/images/onedirection.jpg" alt="Arijit Singh">
+                        </div>
+                        <button id="btn_chart" class="play_button"></button>
+                        <div id="triangle"></div>
+                        <div class="card-body">
+                            <h4 class="card-title card-head">One Direction</h4>
+                            <p class="card-text card-para">Artist</p>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+        </section>       
+</div>
+
+</div>
+</body>
