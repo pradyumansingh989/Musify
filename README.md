@@ -33,7 +33,11 @@
    ![](images/homepage2.PNG)  
    ![](images/signupPage.PNG)  
    ![](images/loginpage.PNG)  
-   ![](images/category-list.png)  
-   ![](images/bts.png)  
+   ![](images/category-list.png)
+   ![](images/category-list1.png)
+   ![](images/category-list2.png)
+   ![](images/bts.png)
+   ![](images/search.png)
+   ![](images/upload.png)
    ![](images/your-upload.png)
   
